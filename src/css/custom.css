@@ -44,15 +44,11 @@ body {
   font-size: 22.5px;
   width: 200px;
 
-  background-color: red;
-}
-
-@media only screen and (max-width: 500px) {
+ 
 }
 
 .docs-link {
   font-size: 18px;
-  padding-left: 15px;
   margin: 0;
   transform: translateY(2.3px);
 }
