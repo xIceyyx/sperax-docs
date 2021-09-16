@@ -15,7 +15,9 @@ const Main = () => {
       <div className="items">
         <Item
           header={"⛏ Start Building"}
-          description={"Get started building your decentralized app or marketplace."}
+          description={
+            "Get started building your decentralized app or marketplace."
+          }
           link={"/docs/intro"}
         />
         <Item
@@ -52,8 +54,9 @@ export default Main;
 
 const Wrapper = styled.main`
   background-color: var(--main-background);
-
+  animation: fade-in 0.5s;
   height: min-content;
+  
   display: flex;
   justify-content: center;
 
@@ -66,12 +69,29 @@ const Wrapper = styled.main`
     //
 
     height: min-content;
-    padding: 50px 0;
+    //
+    padding: 50px 0px;
+    @media only screen and (max-width: 500px) {
+      padding: 50px 10px;
+    }
+    //
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(2.5vw);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;
