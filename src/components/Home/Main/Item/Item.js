@@ -5,15 +5,19 @@ import React from "react";
 import classes from "./Item.module.css";
 
 // Docusaurus
-import Link from "@docusaurus/Link";
+import { useHistory } from "@docusaurus/router";
 
 const Item = (props) => {
+  const history = useHistory();
+
+  const wrapperHandler = () => {
+    history.push(props.link);
+  };
+
   return (
-    <div className={classes.wrapper}>
-      <Link to={props.link} className="link">
-        <h3 className={classes.header}>{props.header}</h3>
-        <p className={classes.description}>{props.description}</p>
-      </Link>
+    <div className={classes.wrapper} onClick={wrapperHandler}>
+      <h3 className={classes.header}>{props.header}</h3>
+      <p className={classes.description}>{props.description}</p>
     </div>
   );
 };

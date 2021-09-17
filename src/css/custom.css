@@ -49,6 +49,8 @@ body {
   font-size: 18px;
   margin: 0;
   transform: translateY(2.3px);
+
+  display: none;
 }
 
 .whitepaper-link {
