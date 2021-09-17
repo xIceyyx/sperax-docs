@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>The Official Goblin Merch Store | Merch For All</h1>
-  <p>Official high quality merch shop for exclusive Goblin apparel and more!</p>
+  <h1>Sperax USD Docs Navigation UI</h1>
   <a href="https://clever-easley-e98afa.netlify.app/" target="_blank">Live Demo</a>
 </div>
 <br/>
