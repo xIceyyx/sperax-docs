@@ -32,8 +32,13 @@ html[data-theme="dark"] {
   --main-text-color: #fff;
 }
 
+html {
+  background-color: var(--main-background);
+}
+
 body {
   background-color: var(--main-background);
+  min-height: max-content;
   min-width: 375px;
 }
 
