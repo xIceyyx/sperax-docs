@@ -1,8 +1,5 @@
 // React
-import React from "react";
-
-// Styled Components
-import styled from "styled-components";
+import React, { Fragment } from 'react';
 
 // Components
 import Header from "./Header/Header";
@@ -10,13 +7,11 @@ import Main from "./Main/Main";
 
 const Home = () => {
   return (
-    <Wrapper>
+    <Fragment>
       <Header />
       <Main />
-    </Wrapper>
+    </Fragment>
   );
 };
 
 export default Home;
-
-const Wrapper = styled.div``;

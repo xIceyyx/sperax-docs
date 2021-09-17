@@ -1,8 +1,8 @@
 // React
 import React from "react";
 
-// Styled Components
-import styled from "styled-components";
+// CSS
+import classes from "./Main.module.css"
 
 // Components
 import Item from "./Item/Item";
@@ -11,8 +11,8 @@ import Item from "./Item/Item";
 
 const Main = () => {
   return (
-    <Wrapper>
-      <div className="items">
+    <main className={classes.wrapper}>
+      <div className={classes.items}>
         <Item
           header={"⛏ Start Building"}
           description={
@@ -46,52 +46,8 @@ const Main = () => {
           link={"/docs/intro"}
         />
       </div>
-    </Wrapper>
+    </main>
   );
 };
 
 export default Main;
-
-const Wrapper = styled.main`
-  background-color: var(--main-background);
-  animation: fade-in 0.5s;
-  height: min-content;
-  
-  display: flex;
-  justify-content: center;
-
-  .items {
-    //
-    width: 1250px;
-    @media only screen and (max-width: 1260px) {
-      width: 100%;
-    }
-    //
-
-    height: min-content;
-    //
-    padding: 50px 0px;
-    @media only screen and (max-width: 500px) {
-      padding: 50px 10px;
-    }
-    //
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translateY(2.5vw);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-`;

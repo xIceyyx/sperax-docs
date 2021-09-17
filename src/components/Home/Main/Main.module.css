@@ -1,0 +1,46 @@
+.wrapper {
+  background-color: var(--main-background);
+  animation: fade-in 0.5s;
+  height: min-content;
+
+  display: flex;
+  justify-content: center;
+}
+
+.items {
+  width: 1250px;
+
+  height: min-content;
+
+  padding: 50px 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(2.5vw);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .items {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .items {
+    padding: 50px 10px;
+  }
+}
